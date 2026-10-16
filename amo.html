@@ -4,27 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Demande d'inscription</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <from method="post" action="inscription.php">
-      <h1>Demande d'inscription</h1>
+      <h1 style="text-align: center;">Demande d'inscription</h1>
       <div class="info">
-      <h2 class="info">1- Informations sur le demandeur :</h2>
-      <label for="identifiant">Identification Digital Civil et Social :</label>
-      <input type="text" id="Identification" />
-      <p>Date de naissance :</p>
-      <label for="jour">jours :</label>
-      <input type="text" id="jour" name="jours" />
-      <label for="mois">Mois :</label>
-      <input type="text" id="mois" name="mois" />
-      <label for="annee">Année :</label>
-      <input type="text" id="annee" name="annee" />
-      <label for="motdepasse">Mot de passe du compte :</label>
-      <input type="password" id="motdepasse" name="motdepasse" />
+        <h2 class="info">1- Informations sur le demandeur :</h2>
+        <label for="identifiant"
+          >Identification Digital Civil et Social :<br></label
+        >
+        <input type="text" id="Identification" />
+        <p>Date de naissance :</p>
+        <label for="jour">jours :</label><br>
+        <input type="text" id="jour" name="jours" /><br>
+        <label for="mois">Mois :</label><br>
+        <input type="text" id="mois" name="mois" /><br>
+        <label for="annee">Année :</label><br>
+        <input type="text" id="annee" name="annee" /><br>
+        <label for="motdepasse">Mot de passe du compte :</label><br>
+        <input type="password" id="motdepasse" name="motdepasse" ><br>
+        <button type="submit">recherche</button>
       </div>
       <h2 class="enfants">2- Liste des enfants pris en charge :</h2>
-      <table class="enfants" border="1">
+      <table class="enfants" border="1" cellpadding="5">
         <tr>
           <th colspan="3">Liste des enfants pris en charge</th>
         </tr>
@@ -45,10 +48,11 @@
         </tr>
       </table>
       <p></p>
-      <label for="code">Saisissez le code :</label>
-      <input type="text" id="code" name="code" />
-      <label for="Observation">Observation</label>
+      <label for="code">Saisissez le code :</label><br>
+      <input type="text" id="code" name="code" /><br>
+      <label for="Observation">Observation :</label><br>
       <textarea id="Observation" name="Observation" rows="4"></textarea>
+      <input type="button" value="Cliquer"
     </from>
   </body>
 </html>
